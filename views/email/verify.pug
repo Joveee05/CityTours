@@ -1,0 +1,20 @@
+extends baseEmail 
+
+block content 
+  p Hi #{firstName},
+  p Welcome to CityTours!!! We are glad to have you 🎉🙏
+  p We are one big family. Please verify your email to complete your registration.
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') Verify your email
+  p If you need any help, please don't hesitate to contact us!
+  p - Brian E. Etaghene, CEO
+
+
+  
